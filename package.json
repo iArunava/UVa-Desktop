@@ -1,0 +1,33 @@
+{
+  "name": "uva-desktop",
+  "version": "1.0.0",
+  "description": "A desktop application to access all of UVa problems and user statistics offline.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iArunava/UVa-Desktop.git"
+  },
+  "keywords": [
+    "UVa",
+    "iarunava",
+    "programming",
+    "competitive-programming",
+    "data-structures",
+    "algorithms"
+  ],
+  "author": "Arunava",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iArunava/UVa-Desktop/issues"
+  },
+  "homepage": "https://github.com/iArunava/UVa-Desktop#readme",
+  "dependencies": {
+    "bootstrap": "^3.3.7"
+  },
+  "devDependencies": {
+    "electron": "^1.6.11"
+  }
+}
