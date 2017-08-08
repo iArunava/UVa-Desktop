@@ -35,7 +35,7 @@ def generator (start_range, close_range):
             else: pdf_num = str(i) + str (j)
 
             pdf_link = base_url + str(i) + "/" + pdf_num + ".pdf"
-            download_pdf (pdf_link)
+            download_pdf (pdf_link, pdf_num)
 
 def download_pdf (pdf_link, pdf_id):
     
