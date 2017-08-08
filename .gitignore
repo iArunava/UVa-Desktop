@@ -60,5 +60,6 @@ typings/
 # All UVa PDFs
 PDFs/
 
-# .swp files
+# others
 *.swp
+secret/
