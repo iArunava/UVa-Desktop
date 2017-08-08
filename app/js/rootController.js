@@ -12,16 +12,16 @@ function ($scope) {
             link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=870"
         },
         {   name: "Programming Challenges (Skiena & Revilla)",
-            link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=28"
+            link: "../html/progChallengesSkienaRevilla.html"
         },
         {   name: "ACM-ICPC World Finals",
-            link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1"
+            link: "../html/ACMICPCWorldFinals.html"
         },
         {   name: "ACM-ICPC Dhaka Site Regional Contests",
-            link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1"
+            link: "../html/ACMICPCDhakaRegional.html"
         },
         {   name: "Western and Southwestern European Regionals",
-            link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1"
+            link: "../html/wSWEurRegionals.html"
         },
         {   name: "Prominent Problemsetters",
             link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1"
