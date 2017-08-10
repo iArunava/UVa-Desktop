@@ -9,27 +9,35 @@
         href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" 
         href="../css/index.css">
-
+    
+    <script src="../../node_modules/angular/angular.js"></script>
 </head>
 
 <body>
     
-    <div class="container">
+    <div ng-app="uvaMain" ng-controller="uvaMainCtrlr" class="container">
         
         <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center"> 
-                <h1 class="html--margin-top-bottom-20"> 
-                    Welcome to UVa Desktop 
-                </h1>
+                <h1 class="html--margin-top-bottom-20"> Welcome to UVa Desktop </h1>
+
                 <a href="./root.html">
-                <button class="btn btn-default btn-large"> 
-                    Browse Problems 
-                </button>
+                <button class="btn btn-default btn-large"> Browse Problems </button>
                 </a>
+                
+                <form>
+                    <div class="form-group">
+                        <label class="sr-only" for="id--quick-find-pdf"> Quick Search </label>
+                        <input type="number" class="form-control" id="id--quick-find-pdf" ng-model="programid">
+                        <button type="submit" class="btn btn-default btn-large" ng-click="quickShow()"> Quick Find </button>
+                    </div>
+                </form>
             </div>
         </div>
 
     </div>
+
+    <script src="../js/uvaMainCtrlr.js"></script>
 
 </body>
 
