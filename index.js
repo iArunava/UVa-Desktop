@@ -33,7 +33,7 @@ function createProgramWin (programid) {
 
     programWin.loadURL (url.format ({
         
-        pathname: path.join (__dirname, '/PDFs/' + programid + '.html'),
+        pathname: path.join (__dirname, '/uva/' + programid + '.html'),
         protocol: 'file:',
         slashes: true
     }));
