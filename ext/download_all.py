@@ -1,7 +1,7 @@
 # A script to download all UVa pdfs
 # Author: Arunava (@iArunava)
 # Created on: 7 August, 2017
-# Last Updated on: 7 August, 2017
+# Last Updated on: 10 August, 2017
 
 """
 Helper Arguments
@@ -19,6 +19,7 @@ Helper Arguments
 
 import sys
 import urllib2
+import subprocess
 
 def generator (start_range, close_range):
 
@@ -42,7 +43,7 @@ def download_pdf (pdf_link, pdf_id):
     logs = True
     try:
         if sys.argv [1] == "--no-logs": logs = False
-        else if sys.argv [1] == "--logs": logs = True
+        elif sys.argv [1] == "--logs": logs = True
         else: 
             print ("Invalid argument.")
             print ("Exitting process...")
@@ -65,7 +66,13 @@ def download_pdf (pdf_link, pdf_id):
     fopen.write (response.read())
     fopen.close()
     if logs: print ("Downloaded and written successfully for " + 
-                        str (pdf_id) + ".pdf !!\n")
+                        str (pdf_id) + ".pdf !!")
+    if logs: print ("Creating HTML from PDF...");
+    subprocess.call ("pdf2htmlEX --fit-width 780 --fit-height 1600 ../PDFs/" +
+        str(pdf_id) + ".pdf ../uva/" + str (pdf_id) + ".html", shell=True)
+    if logs: print ("Created HTML successfully!!");
+    if logs: print ("Process completed successfully for " + str (pdf_id) + 
+                    "\n")
 
 def main ():
     
