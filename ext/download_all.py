@@ -29,7 +29,9 @@ def generator (start_range, close_range):
         for j in range (0, 100):
             
             # Volume 132 holds 40 programs as of 7 Aug, 2017
+            # Volume 17 holds 60 programs as of 7 Aug, 2017
             if i == 132 and j > 40: break
+            if i == 17 and j > 60: break
 
             if j < 10:
                 pdf_num = str(i) + "0" + str(j)
