@@ -70,12 +70,12 @@ def download_pdf (pdf_link, pdf_id):
     if logs: print ("Downloaded and written successfully for " + 
                         str (pdf_id) + ".pdf !!")
     if logs: print ("Creating HTML from PDF...");
-    subprocess.call ("pdf2htmlEX --fit-width 780 --fit-height 1600" 
+    subprocess.call ("pdf2htmlEX --fit-width 780 --fit-height 1600 " 
     + download_location + str(pdf_id) + ".pdf ../uva/" + str (pdf_id) + 
     ".html", shell=True)
     if logs: print ("Created HTML successfully!!");
     if logs: print ("Process completed successfully for " + str (pdf_id) + 
-                    "\n")
+                    "\n\n")
 
 def main ():
     
