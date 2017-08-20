@@ -68,6 +68,15 @@ app.config (function ($routeProvider) {
                          '<hr />' +
                    '</li>'
     })
+
+    .when ("/rujiaLiu", {
+        template: '<li ng-repeat="folder in range (1, 8)">' +
+                         '<h4><a href="{{ folder.link }}">' + 
+                             'Present {{ folder }}: {{rujiaLiuDir[folder]}}' +
+                         '</a></h4>' +
+                         '<hr />' +
+                   '</li>'
+    })
 });
 
 app.controller ("volumeCtrlr", function ($scope) {
@@ -152,6 +161,15 @@ app.controller ("volumeCtrlr", function ($scope) {
     $scope.wswEuroRegCities[1994] = "Zurich";
 
     $scope.wswEuroRegCities[1993] = "Swansea";
+    
+    $scope.rujiaLiuDir = {};
+    $scope.rujiaLiuDir [1] = "A Tiny Contest of Brute Force";
+    $scope.rujiaLiuDir [2] = "A Big Contest of Brute Force";
+    $scope.rujiaLiuDir [3] = "A Data Structure Contest";
+    $scope.rujiaLiuDir [4] = "Dedicated to Geometry and CG Lovers";
+    $scope.rujiaLiuDir [5] = "Developing Simplified Softwares";
+    $scope.rujiaLiuDir [6] = "Happy 30th Birthday to Myself";
+    $scope.rujiaLiuDir [7] = "Hello, interactive problems!";
 
     $scope.directories = [
     {   name: "Problem Set Volumes (100...1999)",
@@ -179,7 +197,7 @@ app.controller ("volumeCtrlr", function ($scope) {
         link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1"
     },
     {   name: "Rujia Liu's Presents",
-        link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1"
+        link: "#!rujiaLiu"
     },
     {   name: "AOAPC I: Beginning Algorithm Contests (Rujia Liu)",
         link: "https://uva.onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&category=1"
